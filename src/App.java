@@ -3,6 +3,7 @@ import java.sql.Statement;
 import java.util.Scanner;
 
 import db.DB;
+import models.Tarefa;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -28,6 +29,19 @@ public class App {
                     System.out.println("");
                     System.out.print("Insirar o nome da tarefa: ");
                     String nome = sc.nextLine();
+                    System.out.print("Insirar a descricao da tarefa: ");
+                    String descricao = sc.nextLine();
+                    System.out.print("Tarefa tá concluída? SIM/NÃO: ");
+                    String aux = sc.nextLine();
+                    boolean isConcluido = false;
+                    if (aux.toLowerCase().charAt(0) == 's') {
+                        isConcluido = true;
+                    } else {
+                        isConcluido = false;
+                    }
+                    Tarefa tarefa = new Tarefa(null, nome, descricao, isConcluido);
+
+
                     
                 break;
                 case 2:
