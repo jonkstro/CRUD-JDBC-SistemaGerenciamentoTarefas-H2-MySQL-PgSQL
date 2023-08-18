@@ -14,7 +14,7 @@ public class App {
         do {
             conn = DB.gConnection();
             st = conn.createStatement();
-            
+
             System.out.println("SELECIONE O QUE DESEJA: ");
             System.out.println("1 - CADASTRAR");
             System.out.println("2 - LISTAR");
@@ -25,7 +25,10 @@ public class App {
             sc.nextLine();
             switch(op) {
                 case 1:
-
+                    System.out.println("");
+                    System.out.print("Insirar o nome da tarefa: ");
+                    String nome = sc.nextLine();
+                    
                 break;
                 case 2:
                 
