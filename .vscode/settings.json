@@ -3,6 +3,7 @@
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "resources/h2-2.2.220.jar"
+        "resources/h2-2.2.220.jar",
+        "resources/postgresql-42.6.0.jar"
     ]
 }
